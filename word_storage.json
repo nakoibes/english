@@ -1,0 +1,26 @@
+[
+  {
+    "word_to_translate": "word1",
+    "translation": "word2",
+    "metadata": {
+      "id": "eed599e7-76b9-4f94-8099-822c3673d761",
+      "created_at": "2022-03-09 21:38:46.232379",
+      "modified_on": null
+    },
+    "reversed": false,
+    "status": "unassigned",
+    "belonging": "current"
+  },
+  {
+    "word_to_translate": "word3",
+    "translation": "word4",
+    "metadata": {
+      "id": "5673a581-db6e-4a47-b402-d336332271a8",
+      "created_at": "2022-03-09 21:38:46.232397",
+      "modified_on": null
+    },
+    "reversed": false,
+    "status": "unassigned",
+    "belonging": "current"
+  }
+]

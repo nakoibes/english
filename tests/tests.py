@@ -1,26 +1,17 @@
-import sys
-
-from functions import get_data
-import mock
+from adapters import InputAdapter, OutputAdapter
 
 
-def t():
-    a = input()
-    b = input()
-    # print(input())
-    # print(input())
+def test_input_adapter():
+    def mock_input():
+        return "mock"
+
+    adapter = InputAdapter(mock_input)
+    assert adapter.get_input() == "mock"
 
 
-def test_get_data():
-    with open("test_get_data.txt") as data:
-        sys.stdin = data
-    # with mock.patch("builtins.input", return_value="123\n321"):
-    #     t()
+def test_output_adapter():
+    def mock_output(output):
+        assert output == "mock"
 
-
-# def start_tests():
-#     test_get_data()
-#
-#
-# if __name__ == "__main__":
-#     start_tests()
+    adapter = OutputAdapter(mock_output)
+    adapter.send_output("mock")
